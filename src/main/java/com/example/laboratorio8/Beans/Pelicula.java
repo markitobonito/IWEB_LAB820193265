@@ -1,4 +1,8 @@
 package com.example.laboratorio8.Beans;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pelicula {
 private int idPelicula;
 private String titulo;
@@ -8,8 +12,20 @@ private double rating;
  private double boxOffice;
  private Genero genero;
  private List<Actor> actores;
+ public Pelicula() {
+ }
 
-      public int getIdPelicula() {
+ public Pelicula(int idPelicula, String titulo, String director, int anioPublicacion, double rating, double boxOffice) {
+  this.idPelicula = idPelicula;
+  this.titulo = titulo;
+  this.director = director;
+  this.anioPublicacion = anioPublicacion;
+  this.rating = rating;
+  this.boxOffice = boxOffice;
+ }
+
+
+ public int getIdPelicula() {
 return idPelicula;
 }
 
